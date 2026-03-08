@@ -9,7 +9,8 @@ html, body {
 
 /* navigation */
 
-.navigation{                    /* navigation container */
+.navigation{       
+    width: 100%;             /* navigation container */
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
@@ -30,7 +31,7 @@ html, body {
 
 .navigation {                   /* swipe effect on navigation */
   opacity: 0;
-  animation: navigationfade 1s ease forwards;
+  animation: navigationfade 2s ease forwards;
 }
 
 @keyframes navigationfade {         /* swipe effect on navigation */
@@ -71,7 +72,7 @@ html, body {
     margin-top: 50px;
 }
 
-.aboutMe p{                     /* about information */
+.aboutMe > p{                     /* about information */
     width: 50%;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -217,4 +218,11 @@ textarea:focus{                 /* hover effect on textarea */
         grid-template-columns: 1fr;
         text-align: center;
     }
+}
+
+#sectionTitles{                     /* section titles */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 25px;
 }
